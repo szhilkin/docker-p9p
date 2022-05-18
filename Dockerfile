@@ -1,5 +1,4 @@
 FROM buildpack-deps:jessie
-MAINTAINER Sergey Zhilkin <szhilkin@gmail.com>
 RUN echo udev hold | dpkg --set-selections && \
     echo initscripts hold | dpkg --set-selections &&\
     echo upstart hold | dpkg --set-selections &&\
